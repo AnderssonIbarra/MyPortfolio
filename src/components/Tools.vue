@@ -22,14 +22,14 @@ export default {
     data(){
         return {
             tools: [
-                { id: 1, name: 'Astro', logo: '/src/assets/astro.svg'},
-                { id: 2, name: 'Vue', logo: '/src/assets/vuejs.svg'},
-                { id: 3, name: 'React', logo: '/src/assets/react.svg'},
-                { id: 4, name: 'CSS', logo: '/src/assets/css3.svg'},
-                { id: 5, name: 'Github', logo: '/src/assets/github.svg'},
-                { id: 6, name: 'JavaScript', logo: '/src/assets/javascript.svg'},
-                { id: 7, name: 'Html5', logo: '/src/assets/html.svg'},
-            ]
+                { id: 1, name: 'Astro', logo: '/svg/astro.svg'},
+                { id: 2, name: 'Vue', logo: '/svg/vuejs.svg'},
+                { id: 3, name: 'React', logo: '/svg/react.svg'},
+                { id: 4, name: 'CSS', logo: '/svg/css3.svg'},
+                { id: 5, name: 'Github', logo: '/svg/github.svg'},
+                { id: 6, name: 'JavaScript', logo: '/svg/javascript.svg'},
+                { id: 7, name: 'Html5', logo: '/svg/html.svg'},
+            ],
         }
     },
     mounted(){
