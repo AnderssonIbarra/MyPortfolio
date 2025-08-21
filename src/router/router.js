@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-const BASE = import.meta.env.BASE || ''
 
 const routes = [
     { path: `/`, component: () => import('@/views/About.vue'), name: 'about' },
@@ -10,7 +9,7 @@ const routes = [
 
 const router = createRouter({ 
     routes,
-    history: createWebHistory(process.env.VITE_BASE_URL),
+    history: createWebHistory(import.meta.env.VITE_BASE_URL),
 })
 
 export default router
