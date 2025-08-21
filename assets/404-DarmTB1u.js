@@ -1,0 +1,1 @@
+import{_ as s,c,b as t,o as n}from"./index-DZKgW24u.js";const o={},r={class:"flex flex-col items-center justify-center h-screen text-white"};function a(l,e){return n(),c("div",r,[...e[0]||(e[0]=[t("h1",{class:"text-6xl font-bold mb-4"},"404",-1),t("p",{class:"text-xl"},"Página no encontrada",-1)])])}const x=s(o,[["render",a]]);export{x as default};
