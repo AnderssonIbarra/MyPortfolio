@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+    --font-Quantico: "Quantico", system-ui, sans-serif;
+    --font-Conthrax: "Conthrax", system-ui, sans-serif;
+    --font-sans: system-ui, sans-serif;
+}
+
+@font-face{
+    font-family: 'Conthrax';
+    src: url("/fonts/Conthrax-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Quantico';
+    src: url("/fonts/Quantico/Quantico-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Quantico';
+    src: url("/fonts/Quantico/Quantico-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Quantico';
+    src: url("/fonts/Quantico/Quantico-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Quantico';
+    src: url("/fonts/Quantico/Quantico-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
