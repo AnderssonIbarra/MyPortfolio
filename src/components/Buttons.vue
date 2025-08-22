@@ -1,9 +1,9 @@
 <template>
-    <button v-if="activateButtonLeft" class="arrow absolute top-1/2 left-33 w-25 h-25 transform -translate-y-1/2 rotate-180 cursor-pointer hover:scale-105 z-10" @click="clickButtonLeft">
-        <img src="/images/arrow.png" id="arrow" alt="Flecha izquierda">
+    <button v-if="activateButtonLeft" class="arrow absolute top-1/2 left-1/10 w-25 h-25 transform -translate-y-1/2 rotate-180 cursor-pointer hover:scale-105 z-10" @click="clickButtonLeft">
+        <img src="/images/arrow.png" id="arrow" alt="Flecha izquierda" @click="clickButtonLeft">
     </button>
-    <button v-if="activateButtonRight" class="arrow absolute top-1/2 right-33 w-25 h-25 transform -translate-y-1/2 cursor-pointer hover:scale-105 z-10" @click="clickButtonRight">
-        <img src="/images/arrow.png" id="arrow" alt="Flecha derecha">
+    <button v-if="activateButtonRight" class="arrow absolute top-1/2 right-1/10 w-25 h-25 transform -translate-y-1/2 cursor-pointer hover:scale-105 z-10" @click="clickButtonRight">
+        <img src="/images/arrow.png" id="arrow" alt="Flecha derecha" @click="clickButtonRight">
     </button>
 </template>
 
@@ -18,6 +18,7 @@ export default {
             activateButtonRight: true,
         }
     },
+    emits: ['clickButtonLeft', 'clickButtonRight'],
     mounted(){
       if(this.animationInfoComplete){
       }
@@ -34,12 +35,12 @@ export default {
       clickButtonRight(){
         this.activateButtonLeft = true;
         this.activateButtonRight = false;
-        this.$emit("clickButtonRight");
+        this.$emit("clickButtonRight", true);
       },
       clickButtonLeft(){
         this.activateButtonLeft = false;
         this.activateButtonRight = true;
-        this.$emit("clickButtonLeft");
+        this.$emit("clickButtonLeft", true);
       }
     }
 }

@@ -30,6 +30,7 @@ export default {
                 { id: 6, name: 'JavaScript', logo: '/svg/javascript.svg'},
                 { id: 7, name: 'Html5', logo: '/svg/html.svg'},
             ],
+            BASE: import.meta.env.VITE_BASE_URL,
         }
     },
     mounted(){
@@ -43,7 +44,6 @@ export default {
             const toolTitle = document.getElementById("tools-title");
             const splitTitle = new SplitText(toolTitle, { type: "chars" });
             const lengthTools = this.tools.length;
-            console.log(lengthTools)
 
             tl.from(splitTitle.chars, {
                 scrambleText:{
